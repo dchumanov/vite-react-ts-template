@@ -1,0 +1,23 @@
+{
+  "extends": ["stylelint-config-standard"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "block-no-empty": true,
+    "selector-pseudo-class-no-unknown": [
+      true,
+      { "ignorePseudoClasses": ["global"] }
+    ],
+    "property-no-unknown": [
+      true,
+      { "ignoreProperties": ["print-color-adjust"] }
+    ],
+    "order/properties-order": [
+      "position", "top", "right", "bottom", "left", "z-index",
+      "display", "flex", "align-items", "justify-content",
+      "width", "height", "margin", "padding",
+      "color", "font-size", "font-family", "text-align",
+      "background", "border", "box-shadow", "opacity",
+      "animation", "transition"
+    ]
+  }
+}
